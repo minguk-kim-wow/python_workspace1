@@ -28,7 +28,7 @@ class Base: #부모 클래스
 #                     doubleX  특정 변수에 종속되기때문에 따로 오버라이딩을 하지 않는다  
 
     
-class Child1(Base) : #Base 클래스를 상속 받음 
+class Child1(Base): #Base 클래스를 상속 받음 
     def __init__(self, x=0, y=0, z=0):
         #self.x = x 
         #self.y = y
@@ -46,11 +46,11 @@ class Child1(Base) : #Base 클래스를 상속 받음
         print(f"x= {self.x} y= {self.y} z={self.z}")
         return 
         
-p = Base() 
-p.display() 
+# p = Base() 
+# p.display() 
 
-p = Base(4,5) 
-p.display()
+# p = Base(4,5) 
+# p.display()
 
 c1 = Child1(1,2,3)
 c1.display()
