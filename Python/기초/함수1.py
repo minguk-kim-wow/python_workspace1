@@ -23,52 +23,52 @@ def print_line(): #함수를 정의 한다
     print("="*30)
     #함수에서 반환값을 안주면 None 이 온다 
 
-print_line() #함수를 호출한다. 
-print_line()
-print_line()
-print_line()
-print_line()
-print_line()
+# print_line() #함수를 호출한다. 
+# print_line()
+# print_line()
+# print_line()
+# print_line()
+# print_line()
 
 print( print_line() )
 
-#1부터 N까지의 합계를 구하는 함수 만들기 
-def sigma(limit): #작은 프로그램 단위 입출력
-    #limit : 매개변수, 매개체를 말한다. 함수 외부에서 함수 내부로 값을 전달하기 위한 목적
-    s = 0
-    for i in range(1, limit+1):
-        s += i 
-    return s 
+# #1부터 N까지의 합계를 구하는 함수 만들기 
+# def sigma(limit): #작은 프로그램 단위 입출력
+#     #limit : 매개변수, 매개체를 말한다. 함수 외부에서 함수 내부로 값을 전달하기 위한 목적
+#     s = 0
+#     for i in range(1, limit+1):
+#         s += i 
+#     return s 
 
-print( sigma(10) )
-print( sigma(100) )
-print( sigma(1000) )
-print( sigma(10000) )
+# print( sigma(10) )
+# print( sigma(100) )
+# print( sigma(1000) )
+# print( sigma(10000) )
 
-"""
-과제1. 정수를 받아가서 짝수이면 True 짝수가 아니면 False를 반환하는 함수 
+# """
+# 과제1. 정수를 받아가서 짝수이면 True 짝수가 아니면 False를 반환하는 함수 
 
-과제2. 윤년 4 년마다 윤년 
-          100년에 윤년이 아님 
-          400년에 한번씩 윤년이다. 
-          함수를 만들어서 연도를 주면 윤년일 경우 True 윤년이 아니면 False를 반환해라 
+# 과제2. 윤년 4 년마다 윤년 
+#           100년에 윤년이 아님 
+#           400년에 한번씩 윤년이다. 
+#           함수를 만들어서 연도를 주면 윤년일 경우 True 윤년이 아니면 False를 반환해라 
  
-"""
-def isEven(n):
-    if n%2==0:
-        return True 
-    return False 
+# """
+# def isEven(n):
+#     if n%2==0:
+#         return True 
+#     return False 
 
-def isLeap(year):
-    if (year%4==0 and year%100!=0) or year%400==0:
-        return True 
-    return False 
+# def isLeap(year):
+#     if (year%4==0 and year%100!=0) or year%400==0:
+#         return True 
+#     return False 
 
-for i in range(1, 11):
-    print(f"{i} = {isEven(i)} ")  
+# for i in range(1, 11):
+#     print(f"{i} = {isEven(i)} ")  
 
-print("윤년확인")
-for i in range(2000, 2026):
-    print(f"{i} = {isLeap(i)}")
+# print("윤년확인")
+# for i in range(2000, 2026):
+#     print(f"{i} = {isLeap(i)}")
 
 

@@ -24,10 +24,10 @@ def append(): #데이터 추가 함수
 
 def output():
     for w in workerList:
-        print( f"{w["name"]}", end="\t")
-        print( f"{w["work_time"]}", end="\t")
-        print( f"{w["per_pay"]}", end="\t")
-        print( f"{w["pay"]}", end="\t")
+        print( f"{w['name']}", end="\t")
+        print( f"{w['work_time']}", end="\t")
+        print( f"{w['per_pay']}", end="\t")
+        print( f"{w['pay']}", end="\t")
         print() #줄바꿈 코드 
         
 

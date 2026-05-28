@@ -59,11 +59,11 @@ print(s)
 words2 = s.split(", ")
 print(words2)
 
-# numbers = [1,2,3,4,5,6,7,8,9,10]
-# print(numbers[0])
-# print(numbers[0::2])
-# print(numbers[::-1])
-# print(numbers[1::2])
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+print(numbers[0])
+print(numbers[0::2])
+print(numbers[::-1])
+print(numbers[1::2])
 
 # #리스트만들기
 # names = [] # names =list()  동일한 문법이다
