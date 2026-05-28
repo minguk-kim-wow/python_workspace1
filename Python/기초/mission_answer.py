@@ -1,4 +1,6 @@
 # [1] Student 클래스 정의
+
+import pickle
 class Student:
     # __init__ 은 클래스를 생성할 때 자동으로 실행되는 '초기화(생성자)' 메서드입니다.
     def __init__(self, name=" ", kor=0, eng=0, math=0):
@@ -54,7 +56,42 @@ class StudentManager:
         for r in resultList:
             r.output()
 
+    def save(self):
+        with open("score.dat","wb") as ff:
+            pickle.dump(self.stList,ff)
+        print("저장승겅")
+
+    def load(self):
+        with open("score.dat","rb") as ff:
+            self.stList = pickle.load(ff)
+        print("읽어")
+
+    def menu(self):
+        print("1.출력")
+        print("2.검색")
+        print("3.정렬")
+        print("4.저장")
+        print("5.불러오기")
+        print("0.검색")
+
+    def main(self):
+        while True: 
+            self.menu()
+            sel = ("선택 : ")
+            if sel == "1":
+                self.output()
+            elif sel == "2":
+                self.searchName()
+            elif sel == "3":
+                self.sort()
+            elif sel == "4":
+                self.save()
+            elif sel == "5":
+                self.load()
+            else: 
+                break
 mgr = StudentManager()
+mgr.main()
 mgr.output()
 print("-"*20)
 mgr.sort()

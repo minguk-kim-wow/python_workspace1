@@ -1,3 +1,5 @@
+import pickle
+
 # [1] Student 클래스 정의
 class Student:
     # __init__ 은 클래스를 생성할 때 자동으로 실행되는 '초기화(생성자)' 메서드입니다.
@@ -36,6 +38,7 @@ class Student:
             "평균": self.avg,
             "평균 등급": self.grade
         }
+    
 
 # 학생 객체들을 담을 리스트
 student_list = []
