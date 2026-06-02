@@ -8,11 +8,11 @@ import seaborn as sns
 #rc - 폰트를 지정할 영역 (차트영역)
 
 
-#절대경로지정
-font_name = font_manager.FontProperties(fname="c:/Windows/Fonts/H2GTRM.TTF").get_name()
-#상대경로지정 - 폰트를 복사해서 붙여놔야 한다. 
-font_name = font_manager.FontProperties(fname="./fonts/H2GTRM.TTF").get_name()
-print(font_name)
+# #절대경로지정
+# font_name = font_manager.FontProperties(fname="c:/Windows/Fonts/H2GTRM.TTF").get_name()
+# #상대경로지정 - 폰트를 복사해서 붙여놔야 한다. 
+# font_name = font_manager.FontProperties(fname="./fonts/H2GTRM.TTF").get_name()
+# print(font_name)
 
 
 #seaborn 의 스타일 설정을 rcParams 고치는거보다 먼저 해야 한글이 안깨진다. 

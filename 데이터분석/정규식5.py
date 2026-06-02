@@ -1,5 +1,5 @@
 import re
-#전화번호만 추출하기
+#이메일 추출하기
 text = """
 
     홍길동 phone : 010-0000-0000 email:test1@nate.com

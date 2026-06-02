@@ -21,7 +21,7 @@ print(taglist)
 pytagcloud.create_tag_image(taglist, 
                             'wordcloud.jpg',
                             size=(600,600),
-                            fontname='Korean',
+                            fontname='H2GTRM',
                             rectangular=True)
 webbrowser.open('wordcloud.jpg')
 
