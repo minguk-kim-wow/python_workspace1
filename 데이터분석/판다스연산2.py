@@ -13,6 +13,7 @@ df = pd.DataFrame(columns=["kor", "eng", "mat"])
 df.loc[ len(df)] = data1  #이렇게 바뀌었음 
 df.loc[ len(df)] = data2 
 df.loc[ len(df)] = data3 
+print("\ndf 생성 확인용 :")
 print(df)
 
 #여러개의 데이터프레임을 합칠수도 있다. concat
@@ -22,11 +23,21 @@ df = pd.concat([
     pd.DataFrame([data2]),
     pd.DataFrame([data3])
 ], ignore_index=True)
-print("\nconcat 결과:")
+print("\nconcat 결과(ignore_index=True):")
 print(df)
 
-df['total'] = df['kor'] + df['eng'] + df['mat']
-df['avg']=df['total']//3 
+df2 = pd.concat([
+    pd.DataFrame([data1]),
+    pd.DataFrame([data2]),
+    pd.DataFrame([data3])
+])
+print("\nconcat 결과(ignore_index 없음):")
+print(df2)
 
-print(df)
+
+
+# df['total'] = df['kor'] + df['eng'] + df['mat']
+# df['avg']=df['total']//3 
+
+# print(df)
 
